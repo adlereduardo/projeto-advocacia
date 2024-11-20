@@ -1,0 +1,43 @@
+
+
+.container{
+    max-width: 100vw;
+    height: 100vh;
+
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+    h1{
+        margin: auto;
+    }
+
+    p{
+        font-size: 12px;
+    }
+}
+
+.content{
+    max-width: 400px;
+}
+
+.container-content{
+    display: flex;
+}
+
+.missao-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 400px;
+    cursor: pointer;
+    transition: scale 0.5s ease;
+}
+
+img:hover{
+    scale: 1.03;
+}
