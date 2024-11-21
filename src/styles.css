@@ -18,3 +18,22 @@ h1{
     font-size: 2rem;
     color: #333;
 }
+
+.menu-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.menu-item:hover::after{
+    width: 100%;
+}
+
+.menu-item{
+    position: relative;
+}

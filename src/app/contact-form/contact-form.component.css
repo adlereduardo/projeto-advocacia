@@ -36,7 +36,8 @@ section{
   }
   
   .contact-form label {
-    font-weight: bold;
+    font-weight: 500;
+    color: #333;
   }
   
   .contact-form input,
@@ -49,7 +50,7 @@ section{
   
   .contact-form button {
     padding: 10px 15px;
-    background-color: #333;
+    background-color: #967a6b;
     color: #fff;
     border: none;
     border-radius: 5px;
