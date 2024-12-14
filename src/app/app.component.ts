@@ -5,12 +5,13 @@ import { HttpClient, withFetch } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { AuthService } from './autenticacao/auth.service';
+import { HeaderComponent } from "./components/header/header.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterOutlet, FooterComponent],
+  imports: [ReactiveFormsModule, CommonModule, RouterOutlet, FooterComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
