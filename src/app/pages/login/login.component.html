@@ -1,0 +1,33 @@
+<div class="content-container">
+    <div class="login-container">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" class="login-form">
+  
+        <p class="heading">Login</p>
+        <p class="paragraph">Autenticação Firebase</p>
+  
+        <!-- Exibindo a mensagem de erro -->
+        @if (errorMessage) {
+          <div class="error-message">{{ errorMessage }}</div>
+        }
+  
+        <!-- Formulário de login -->
+        <div class="input-group">
+          <input type="text" placeholder="Email" formControlName="email" id="email" class="form-control" />
+        </div>
+  
+        <div class="input-group">
+          <input type="password" placeholder="Senha" formControlName="password" id="password" class="form-control" />
+        <button type="submit">Entrar</button>
+
+        </div>
+        
+  
+        <div class="bottom-text">
+          <p>Você não tem uma conta? <a routerLink="/register">Registre-se</a></p>
+          <p><a href="#">Esqueceu a senha?</a></p>
+        </div>
+  
+      </form>
+    </div>
+  </div>
+  

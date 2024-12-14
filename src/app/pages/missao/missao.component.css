@@ -8,17 +8,19 @@
     
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
 
     background-color: #1b1b1a;
+    text-align: center;
     
     h1{
-        margin: auto;
+
         color: #fff;
     }
 
     h2{
         color: #967a6b;
+        font-size: 14px;
     }
 
     p{
@@ -29,6 +31,9 @@
 
 .content{
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container-content{
