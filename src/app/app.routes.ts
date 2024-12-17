@@ -5,7 +5,7 @@ import { ContactFormComponent } from './pages/contact-form/contact-form.componen
 import { RegisterComponent } from './pages/register/register.component';
 import { NgModule } from '@angular/core';
 import { CrudComponent } from './pages/crud/crud.component';
-import { AuthGuard} from './autenticacao/auth.guard';
+import { AuthGuard } from './autenticacao/auth.guard';
 
 export const routes: Routes = [
 
@@ -15,10 +15,16 @@ export const routes: Routes = [
     },
 
     {
+        path: 'crud',
+        component: CrudComponent,
+        canActivate: [AuthGuard]
+    },
+
+    {
         path: 'login',
         component: LoginComponent
     },
-
+    
     {
         path: 'contato',
         component: ContactFormComponent
@@ -30,9 +36,9 @@ export const routes: Routes = [
     },
 
     {
-        path: 'crud',
-        component: CrudComponent,
-        canActivate: [AuthGuard]
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full'
     },
 
 ];
