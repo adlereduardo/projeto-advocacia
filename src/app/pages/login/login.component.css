@@ -12,13 +12,12 @@ html, body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
   }
   
   .login-container {
     padding: 40px;
-    height: fit-content;
-    width: 100%;
+    width: 30%;
     text-align: center;
   }
   
@@ -29,14 +28,14 @@ html, body {
   }
   
   .heading {
-    color: #ffffff;
+    color: #000000;
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 5px;
   }
   
   .paragraph {
-    color: #ffffff;
+    color: #000000;
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 15px;
@@ -44,6 +43,7 @@ html, body {
   
   .input-group input{
     margin-bottom: 20px;
+    border-radius: 30px !important;
   }
   
   .input-group input {
@@ -51,38 +51,12 @@ html, body {
     border: 1px solid #353535;
     padding: 15px 23px;
     font-size: 16px;
-    border-radius: 30px;
-    color: #979797;
+    color: #000000;
     width: 80%;
-    box-shadow: rgb(136 136 136 / 17%) 0px -23px 25px 0px inset,
-      rgb(81 81 81 / 23%) 0px -36px 30px 0px inset,
-      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
   
   .input-group input:focus {
-    border-color: #ffffff;
-    outline: none;
-  }
-  
-  button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 30px;
-    background-color: #967a6b;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block;
-  }
-  
-  button:hover {
-    background-color: #ffffff;
-    color: black;
+   
   }
   
   .bottom-text {
@@ -90,7 +64,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    color: #ffffff;
+    color: #000000;
     font-size: 15px;
     font-weight: 400;
   }
@@ -98,10 +72,11 @@ html, body {
   .bottom-text a {
     color: #967a6b;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
   }
   
   .bottom-text a:hover {
-    color: #3f95f2;
+    color: black;
+    scale: 1.2;
   }
   

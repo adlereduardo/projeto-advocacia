@@ -33,7 +33,7 @@ export class LoginComponent {
     this.authService
     .login(rawForm.email, rawForm.password)
     .subscribe(() => {
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl('/crud');
     },
     (error) => { this.errorMessage = error.message; });
 

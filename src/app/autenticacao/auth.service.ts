@@ -32,6 +32,7 @@ export class AuthService {
             password
         ).then(() => {});
         return from(promise);
+        
     }
 
      // Realiza o logout
@@ -47,6 +48,4 @@ export class AuthService {
   isLoggedIn(): boolean {
     return !!localStorage.getItem('authToken');
   }
-  
-
 }

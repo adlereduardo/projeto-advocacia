@@ -5,7 +5,7 @@ import { AuthService } from '../autenticacao/auth.service'; // Ajuste o caminho 
 @Injectable({
   providedIn: 'root'
 })
-export class DashboardAuthGuard implements CanActivate {
+export class AuthGuard implements CanActivate {
 
   constructor(private authService: AuthService, private router: Router) {}
 

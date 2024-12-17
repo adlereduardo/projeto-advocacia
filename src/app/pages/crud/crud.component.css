@@ -1,0 +1,37 @@
+
+body {
+    background-color: #f3f6fb;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal{
+}
+
+.modal-dialog{
+    scale: 0.9;
+
+}
+
+.modal-content{
+    scale: 0.9;
+    
+}
+
+.card-header {
+    background-color: #ffff !important;
+}
+.form-control { 
+    border: 1px solid #266db5 !important;
+}
+
+.btn-primary{
+    background-color: black ;
+}
+
+.btn-danger {
+    background-color: black;
+}

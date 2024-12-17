@@ -7,7 +7,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AuthService } from './autenticacao/auth.service';
 import { HeaderComponent } from "./components/header/header.component";
 
-
 @Component({
   selector: 'app-root',
   standalone: true,

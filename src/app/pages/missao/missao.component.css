@@ -42,11 +42,11 @@
 
 .missao-img{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 img{
-    width: 400px;
+    width: 300px;
     cursor: pointer;
     transition: scale 0.5s ease;
 }
