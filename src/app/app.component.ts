@@ -20,11 +20,21 @@ export class AppComponent {
   title = 'Projeto Angular Advocacia';
 
   http = inject(HttpClient);
+  isLoggedIn: boolean = false;
 
 
   constructor(private authService: AuthService) {}
 
-  logout(): void {
-    this.authService.logout();
+  ngOnInit(): void {
+    // Subscreve ao estado de login para atualizar a interface
+    this.authService.isLoggedIn$.subscribe((isLoggedIn: boolean) => {
+      this.isLoggedIn = isLoggedIn;
+    });
   }
+
+  logout() {
+    this.authService.logout().subscribe(() => {
+      console.log('Usuário desconectado com sucesso');
+    });
+}
 }

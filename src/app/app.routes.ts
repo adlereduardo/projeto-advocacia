@@ -6,6 +6,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { NgModule } from '@angular/core';
 import { CrudComponent } from './pages/crud/crud.component';
 import { AuthGuard } from './autenticacao/auth.guard';
+import { PoliticasComponent } from './pages/politicas/politicas.component';
 
 export const routes: Routes = [
 
@@ -33,6 +34,11 @@ export const routes: Routes = [
     {
         path: 'register',
         component: RegisterComponent
+    },
+
+    {
+        path: 'politicas',
+        component: PoliticasComponent
     },
 
     {

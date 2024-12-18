@@ -2,6 +2,8 @@
 <header class="header">
       <a class="menu-item" href="#sobre">Sobre Nós</a>
       <a class="menu-item" href="#servicos">Serviços</a>
-      <a class="menu-item"routerLink="/contato">Contato</a>
-      <a class="menu-item"routerLink="/login">Login</a>
+      <a class="menu-item" routerLink="/contato">Contato</a>
+      <!-- Se o usuário estiver logado, exibe o link de Logout, caso contrário, exibe o link de Login -->
+      <a *ngIf="isLoggedIn" class="menu-item" (click)="logout()">Logout</a>
+      <a *ngIf="!isLoggedIn" class="menu-item" routerLink="/login">Login</a>
 </header>
