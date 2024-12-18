@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
 
   isLoggedIn: boolean = false;
 
-  constructor(private authService: AuthService) {}
+  constructor(public authService: AuthService) {}
 
   ngOnInit(): void {
     // Substitua a assinatura para verificar o estado de login

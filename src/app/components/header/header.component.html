@@ -6,4 +6,17 @@
       <!-- Se o usuário estiver logado, exibe o link de Logout, caso contrário, exibe o link de Login -->
       <a *ngIf="isLoggedIn" class="menu-item" (click)="logout()">Logout</a>
       <a *ngIf="!isLoggedIn" class="menu-item" routerLink="/login">Login</a>
+
+      <li *ngIf="authService.isLoggedIn()" class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-user"></i></a>
+            <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" routerLink="/crud">Agendamento</a></li>
+                  <li><a class="dropdown-item" href="#">ZZZZ</a></li>
+                  <li><a class="dropdown-item" href="#">ZZZZ</a></li>
+            </ul>
+      </li>
+
+
+
 </header>

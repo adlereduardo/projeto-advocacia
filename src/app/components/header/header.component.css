@@ -18,4 +18,16 @@
     margin-right: 50px
   }
 
+  i{
+    color: #fff;
+  }
+
+  .dropdown-item{
+    color: black;
+  }
+
+  .dropdown-menu{
+    background-color: #fff;
+  }
+
  
