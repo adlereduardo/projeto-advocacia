@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 
 export class CrudComponent implements OnInit {
 
+  
+
   // Usa o decorador @ViewChild para acessar um elemento DOM com o ID "myModal".
   @ViewChild('myModal') model: ElementRef | undefined;
   // Cria uma instância vazia de Cliente para ser usada nos formulários.

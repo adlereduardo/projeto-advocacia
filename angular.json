@@ -23,7 +23,7 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "/"
+                "input": "public"
               }
             ],
             "styles": [
@@ -39,7 +39,9 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/projeto-advocacia/",
               "budgets": [
+                
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
