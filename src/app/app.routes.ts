@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { CrudComponent } from './pages/crud/crud.component';
 import { AuthGuard } from './autenticacao/auth.guard';
 import { PoliticasComponent } from './pages/politicas/politicas.component';
+import { AssociadosComponent } from './pages/associados/associados.component';
 
 export const routes: Routes = [
 
@@ -39,6 +40,11 @@ export const routes: Routes = [
     {
         path: 'politicas',
         component: PoliticasComponent
+    },
+
+    {
+        path: 'associados',
+        component: AssociadosComponent
     },
 
     {

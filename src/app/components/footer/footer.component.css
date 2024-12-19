@@ -27,3 +27,17 @@ a{
         padding: 20px;
     }
 }
+
+
+  /* Responsividade */
+
+  @media (max-width: 768px) {
+
+    footer{
+        justify-content: space-between;
+        gap: 0;
+        font-size: 0.8rem;
+    }
+        
+    }
+  

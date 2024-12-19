@@ -1,0 +1,147 @@
+body {
+    height: 100vh;
+    background-image: url('https://picsum.photos/g/3000/2000');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.picture{
+    cursor: pointer;
+}
+
+.team-page {
+    padding: 50px 0;
+    background-color: #ffffff; /* Fundo claro para destacar a seção */
+    text-align: center;
+}
+
+.team-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.team-title::after {
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: #383838;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.our-team {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #cab4a8;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-team .picture {
+    display: inline-block;
+    height: 130px; /* Tamanho fixo da imagem */
+    width: 130px; /* Tamanho fixo da imagem */
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+    border-radius: 50%; /* Borda arredondada */
+    overflow: hidden; /* Garante que a imagem seja cortada no círculo */
+}
+
+.our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #3d4042;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+    height: 100%;
+}
+
+.our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #967a6b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.our-team .picture img {
+    width: 100%; /* Imagem ocupa 100% da área disponível */
+    height: 100%; /* Ajusta a altura da imagem ao tamanho fixo */
+    object-fit: cover; /* A imagem se adapta, mantendo a proporção sem distorcer */
+    border-radius: 50%; /* Garantindo borda arredondada */
+    transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec; /* Efeito de brilho ao passar o mouse */
+    transform: scale(0.7); /* Efeito de redução de escala */
+}
+
+.our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out; /* Adicionado efeito de hover na cor */
+}
+
+.our-team:hover .title {
+    color: #1b1b1b; /* Alteração da cor do título no hover */
+}
+
+.our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+    bottom: 0; /* Social icons aparecem no hover */
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.our-team .social li a:hover {
+    color: #383c41;
+    background-color: #f7f5ec;
+}

@@ -21,4 +21,15 @@
     color: #555;
     line-height: 1.6;
   }
+
+   /* Responsividade */
+
+@media (max-width: 768px) {
+
+ .container{
+  display: flex;
+  flex-direction: column;
+ }
+
+}
   

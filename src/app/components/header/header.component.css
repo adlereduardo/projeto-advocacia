@@ -30,4 +30,17 @@
     background-color: #fff;
   }
 
+  /* Responsividade */
+
+@media (max-width: 768px) {
+
+  .header{
+      justify-content: space-between;
+      gap: 0;
+      font-size: 0.8rem;
+      padding: 20px;
+  }
+      
+  }
+
  
